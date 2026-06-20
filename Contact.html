@@ -1,0 +1,299 @@
+<!doctype html>
+<html lang="en " data-bs-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Model of the Motorcycle</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+      .hero-section{
+        position: relative;
+        background: url("./image/poster.jpg") no-repeat center center;
+        background-size: cover;
+        min-height:910px;
+        display:flex;
+        align-items:center;
+        color:blue;
+        overflow:hidden;
+      }
+      .hero-overlay{
+        position: absolute;
+        top:0;
+        left:0;
+        width:100%;
+        height:100%;
+        background:lightblue-gradient(
+          90deg,
+          rgba(0, 0, 0, 0.85) 0%,
+          rgba(0, 0, 0, 0.6) 50%,
+          rgba(0, 0, 0, 0.3) 100%
+        );
+        z-index:1;
+      }
+      .text-accent{
+        color:rgb(0, 255, 0);
+      }
+      .btn-outline-custom {
+        border: 2px solid rgb(0, 255, 0);
+        color: white;
+        background: transparent;
+        font-weight: bold;
+        text-transform: uppercase;
+        padding: 10px 30px;
+        letter-spacing: 1px;
+        transition: all 0.3s ease;
+      }
+      .contact{
+        transform: transform 0.3s ease;
+      }
+      .contact:hover{
+        transform:translateY(-8px)
+      }
+       .btn-outline-custom:hover {
+        background-color: rgb(0, 255, 0);
+        color: black;
+      }
+      .nav-link{
+        font-size: 1.2rem;
+      }
+      .custom-input:focus {
+       background-color: white !important;
+       color: black !important;
+       border-color: blue !important;
+       box-shadow: 0 0 0 0.25rem rgba(59, 130, 246, 0.15) !important;
+      }
+      .nav-link { cursor: pointer; }
+        html { scroll-behavior: smooth; }
+        /*Footer style*/
+        .custom-footer{
+          background-color: black;
+        }
+        .footer-link{
+          color: gray ;
+          text-decoration: none;
+          transition: color 0.2s ease;      
+        }
+        .footer-link:hover{
+          color: rgb(0, 249, 0);
+        }
+        .social-icon{
+          width:38px;
+          height:38px;
+          background-color: black;
+          color : white;
+          display:inline-flex;
+          align-items: center;
+          justify-content: center;
+          border-radius:50%;
+          transition:all 0.2s ease;
+        }
+        .social-icon:hover{
+          background-color:rgb(0, 255, 0);
+          color: white;
+          transform:scale(1.1); 
+
+        }
+        .newsletter-input{
+          background-color:black;
+          border: 1px solid gray;
+          color: white;
+        }
+        .newsletter-input:focus{
+          background-color: black;
+          border-color:rgb(0, 255, 0);
+          box-shadow:none;
+        }
+    </style>
+  </head>
+  <body>
+    <nav
+      class="navbar navbar-expand-lg bg-body-tertiary border-bottom sticky-top"
+    >
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center gap-2" href="#home">
+          <img 
+           src="./image/logo moldel.jpg"
+           alt="Motorcycle Logo"
+           height="36"
+           class="d-inline-block align-text-top"
+           style="object-fit: contain;"
+          />
+          <span class="fw-bold">Model motorcycle</h1></span>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mainNav"
+          aria-controls="mainNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div id="mainNav" class="collapse navbar-collapse">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a href="index.html" class="nav-link">
+                <i class="bi bi-house-door"></i> Home
+              </a>
+            </li>
+              <li class="nav-item">
+               <a href="Product.html" class="nav-link">
+                 <i class="bi bi-box-seam"></i> Product
+               </a>
+              </li>
+            <li class="nav-item">
+              <a href="About Us.html" class="nav-link">
+                <i class="bi bi-people"></i> About Us
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="Service.html" class="nav-link">
+                <i class="bi bi-gear"></i> Service
+              </a>
+            </li>
+             <li class="nav-item">
+              <a href="Contact.html" class="nav-link">
+                <i class="bi bi-envelope"></i> Contact Us
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+     
+    <div class="hero-section py-5">
+       <div class="hero-overlay"></div>
+      
+      <div class="container hero-content">
+        <div class="row">
+          <div class="col-lg-6 col-md-8 text-start">
+            <h6 class="text-uppercase fw-bold mb-2 tracking-wider">
+              so Demm
+            </h6>
+
+            <h1 class="display-3 fw-black text-uppercase lh-1 mb-3">
+              welcome to Model motorcycle <br />
+              <span class="text-accent">In my website</span>
+            </h1>
+
+            <p class="lead mb-4 text-secondary text-light">
+              Experience the raw power and racing heritage of our newest model.
+              Built to dominate every track and trail.
+            </p>
+
+            <small class="d-block mt-4 text-muted fst-italic">
+              Professional rider on a closed course. Do not attempt.
+            </small>
+          </div>
+      </div>
+      </div>
+    </div>
+     <section id="contact" class="my-5 container px-3 px-md-0">
+  <div class="row g-0 rounded-3 shadow-sm bg-white overflow-hidden mx-auto" style="max-width: 1050px; border: 1px solid #e2e8f0;">
+    
+    <div class="col-12 col-lg-5 d-flex flex-column justify-content-between p-4 p-sm-5 text-white position-relative" 
+         style="background: linear-gradient(130deg, rgba(1, 9, 255, 0.9) 0%, rgba(31, 41, 55, 0.85) 100%), url('./image/logo moldel.jpg') center/cover no-repeat; min-height: 250px;">
+      
+      <div>
+        <h3 class="fs-2 fw-black text-uppercase mb-2 style-title" style="font-family: 'Impact', sans-serif; letter-spacing: 1px;">Join The Ride</h3>
+        <p class="opacity-75 small">Connect with our engineering or showroom experts directly. Tell us what you're building or looking to buy.</p>
+      </div>
+      
+      <div class="w-100 border-top my-4" style="border-color: rgba(255,255,255,0.15) !important;"></div>
+      
+      <div class="d-flex flex-column flex-sm-row flex-lg-column gap-3 small text-white-50">
+        <div>
+          <strong class="text-white d-block text-uppercase">Headquarters</strong>
+          100 Throttle Blvd, Austin, TX
+        </div>
+        <div class="ms-0 ms-sm-auto ms-lg-0">
+          <strong class="text-white d-block text-uppercase">Support Hub</strong>
+          support@motorcyclemodel.com
+        </div>
+      </div>
+
+    </div>
+
+    <div class="col-12 col-lg-7 p-4 p-sm-5">
+      <h3 class="fs-4 fw-bold mb-4 text-dark text-uppercase" style="letter-spacing: 0.5px;">Contact Showroom</h3>
+      <form class="needs-validation" novalidate>
+        
+        <div class="mb-3">
+          <label for="name" class="form-label small fw-semibold text-secondary">Full Name</label>
+          <input id="name" type="text" required class="form-control" placeholder="Your Name" style="border: 1px solid #cbd5e1; color: #1e293b;" />
+        </div>
+
+        <div class="mb-3">
+          <label for="email" class="form-label small fw-semibold text-secondary">Email Address</label>
+          <input id="email" type="email" required class="form-control" placeholder="name@example.com" style="border: 1px solid #cbd5e1; color: #1e293b;" />
+        </div>
+
+        <div class="mb-4">
+          <label for="message" class="form-label small fw-semibold text-secondary">Message / Spec Details</label>
+          <textarea id="message" rows="5" required class="form-control" placeholder="Tell us about your bike or inquiry..." style="border: 1px solid #cbd5e1; color: #1e293b; resize: vertical;"></textarea>
+        </div>
+
+        <div class="d-flex flex-column flex-sm-row align-items-sm-center justify-content-between gap-3">
+          <p class="text-muted small mb-0">We answer within 1-2 business days.</p>
+          <button type="submit" class="btn btn-dark px-4 py-2 text-uppercase fw-bold w-100 w-sm-auto" style="border-radius: 4px; font-size: 0.85rem; letter-spacing: 0.5px;">Submit Form</button>
+        </div>
+      </form>
+    </div>
+
+  </div>
+</section>
+  
+
+    <!--footer -->
+    <footer class="custom-footer pt-5 pb-4 text-light">
+      <div class="container">
+        <div class="row g-4 mb-5">
+          <div class="col-12 col-lg-4">
+            <h5 class="text-uppercase fw-bold mb-3 text-white">
+              Model Motorcycle
+            </h5>
+            <p class="text-white small pe-lg-4">
+              premium custom motorcycle modifications track performance setups
+              and digital diagnostics tuning for hight end sport bikes and cruisers
+            </p>
+            <div class="d-flex gap-2 mt-4">
+                <a href="#" class="social-icon"><i class="bi bi-facebook"></i> </a>
+                <a href="#" class="social-icon"><i class="bi bi-instagram"></i></a>
+                <a href="#" class="social-icon"><i class="bi bi-twitter-x"></i></a>
+                <a href="#" class="social-icon"><i class="bi bi-youtube"></i></a>
+              </div>
+            </div>
+            <div class="col-6 col-sm-6 col-lg-2">
+              <h6 class="text-uppercase fw-bold text-white mb-3">Navigation</h6>
+              <ul class="list-unstyled d-flex d-flex flex-column gap-2 small">
+                <li> <a href="index.html" class="footer-link">Home</a></li>
+                <li> <a href="Product.html" class="footer-link">Product</a></li>
+                <li> <a href="About Us.html" class="footer-link">About Us</a></li><li> <a href="Home.html" class="footer-link">Home</a></li>
+                <li> <a href="Contact.html" class="footer-link">Contact</a></li>
+              </ul>
+            </div>
+            <div class="col-6 col-sm-6 col-lg-2">
+            <h6 class="text-uppercase fw-bold text-white mb-3">Services</h6>
+            <ul class="text-unstyled f-flex flex-column gap-2 small">Premium Care
+              <li><a href="#services" class="footer-link">Custom Tuning</a></li>
+              <li><a href="#services" class="footer-link">Premium care</a></li>
+              <li><a href="#services" class="footer-link">ECu scanning</a></li>
+              <li href="#services" class="footer-link">Telemetry maps</li>
+            </ul>
+            </div>
+          </div>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

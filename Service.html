@@ -1,0 +1,325 @@
+<!doctype html>
+<html lang="en" data-bs-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Model of the Motorcycle</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+    <style>
+      .hero-section {
+        position: relative;
+        background: url("./image/poster.jpg") no-repeat center center;
+        background-size: cover;
+        min-height: 910px;
+        display: flex;
+        align-items: center;
+        color: #ffffff;
+        overflow: hidden;
+      }
+      .hero-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(
+          90deg,
+          rgba(0, 0, 0, 0.85) 0%,
+          rgba(0, 0, 0, 0.6) 50%,
+          rgba(0, 0, 0, 0.3) 100%
+        );
+        z-index: 1;
+      }
+      .text-accent {
+        color: #2bd60c; /* Optimized green contrast for white backgrounds */
+      }
+      .btn-outline-custom {
+        border: 2px solid #39ff14;
+        color: #ffffff;
+        background: transparent;
+        font-weight: bold;
+        text-transform: uppercase;
+        padding: 10px 30px;
+        letter-spacing: 1px;
+        transition: all 0.3s ease;
+      }
+      .btn-outline-custom:hover {
+        background-color: #39ff14;
+        color: #ffffff;
+      }
+      .nav-link {
+        font-size: 1.2rem;
+        cursor: pointer;
+      }
+
+      /* Updated Service Card Styling for Light Backgrounds */
+      .service-card {
+        background-color: #f8f9fa;
+        border: 1px solid #e9ecef;
+        transition:
+          transform 0.3s ease,
+          border-color 0.3s ease,
+          box-shadow 0.3s ease;
+      }
+      .service-card:hover {
+        transform: translateY(-8px);
+        border-color: #2bd60c;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+      }
+      .service-icon-box {
+        width: 60px;
+        height: 60px;
+        background-color: #e9ecef;
+        border-radius: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #2bd60c;
+        font-size: 1.75rem;
+        margin-bottom: 1.5rem;
+      }
+
+      /* Custom Footer Styles */
+      .custom-footer {
+        background-color: #111827;
+      }
+      .footer-link {
+        color: #9ca3af;
+        text-decoration: none;
+        transition: color 0.2s ease;
+      }
+      .footer-link:hover {
+        color: #2bd60c;
+      }
+      .social-icon {
+        width: 38px;
+        height: 38px;
+        background-color: #1f2937;
+        color: #ffffff;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        transition: all 0.2s ease;
+      }
+      .social-icon:hover {
+        background-color: #2bd60c;
+        color: #ffffff;
+        transform: scale(1.1);
+      }
+      .newsletter-input {
+        background-color: #1f2937;
+        border: 1px solid #374151;
+        color: #ffffff;
+      }
+      .newsletter-input:focus {
+        background-color: #1f2937;
+        border-color: #2bd60c;
+        color: #ffffff;
+        box-shadow: none;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
+  </head>
+  <body>
+    <nav
+      class="navbar navbar-expand-lg bg-body-tertiary border-bottom sticky-top"
+    >
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center gap-2" href="#home">
+          <img
+            src="./image/logo moldel.jpg"
+            alt="Motorcycle Logo"
+            height="36"
+            class="d-inline-block align-text-top"
+            style="object-fit: contain"
+          />
+          <span class="fw-bold">Model motorcycle</span>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mainNav"
+          aria-controls="mainNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div id="mainNav" class="collapse navbar-collapse">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a href="index.html" class="nav-link"
+                ><i class="bi bi-house-door"></i> Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="Product.html" class="nav-link"
+                ><i class="bi bi-box-seam"></i> Product</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="About Us.html" class="nav-link"
+                ><i class="bi bi-people"></i> About Us</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="Service.html" class="nav-link"
+                ><i class="bi bi-gear"></i> Service</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="Contact.html" class="nav-link"
+                ><i class="bi bi-envelope"></i> Contact Us</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section id="services" class="py-5 bg-white text-dark">
+      <div class="container py-4">
+        <div class="text-center mb-5">
+          <span
+            class="text-uppercase fw-bold text-accent tracking-wider small d-block mb-2"
+            style="letter-spacing: 2px"
+            >What We Do</span
+          >
+          <h2
+            class="display-5 fw-extrabold text-uppercase m-0 text-dark"
+            style="font-family: &quot;Arial Black&quot;, sans-serif"
+          >
+            Our Performance Services
+          </h2>
+          <div
+            class="mx-auto mt-3"
+            style="width: 60px; height: 3px; background-color: #2bd60c"
+          ></div>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-12 col-md-4">
+            <div class="card service-card h-100 p-4 text-dark rounded-3">
+              <div class="service-icon-box">
+                <i class="bi bi-wrench-adjustable"></i>
+              </div>
+              <h4 class="fw-bold text-uppercase mb-3">Custom Tuning</h4>
+              <p class="text-muted small mb-4">
+                Maximize your motorcycle's output. From performance exhaust
+                mapping to dyno fuel adjustments, we built machines to fly.
+              </p>
+              <a
+                href="Contact.html"
+                class="mt-auto text-decoration-none text-accent fw-bold small text-uppercase"
+                >Book Build &rarr;</a
+              >
+            </div>
+          </div>
+
+          <div class="col-12 col-md-4">
+            <div class="card service-card h-100 p-4 text-dark rounded-3">
+              <div class="service-icon-box">
+                <i class="bi bi-shield-check"></i>
+              </div>
+              <h4 class="fw-bold text-uppercase mb-3">Premium Care</h4>
+              <p class="text-muted small mb-4">
+                Precision maintenance plans including fluids flush, chain
+                adjustments, and comprehensive road safety diagnostics
+                intervals.
+              </p>
+              <a
+                href="Contact.html"
+                class="mt-auto text-decoration-none text-accent fw-bold small text-uppercase"
+                >View Schedule &rarr;</a
+              >
+            </div>
+          </div>
+
+          <div class="col-12 col-md-4">
+            <div class="card service-card h-100 p-4 text-dark rounded-3">
+              <div class="service-icon-box">
+                <i class="bi bi-cpu"></i>
+              </div>
+              <h4 class="fw-bold text-uppercase mb-3">ECU & Diagnostics</h4>
+              <p class="text-muted small mb-4">
+                Advanced digital code scanning for late model electronic
+                ignition faults, track telemetry mapping, and engine sensor
+                troubleshooting.
+              </p>
+              <a
+                href="Contact.html"
+                class="mt-auto text-decoration-none text-accent fw-bold small text-uppercase"
+                >Run Scan &rarr;</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--footer-->
+    <footer class="custom-footer pt-5 pb-4 text-light">
+      <div class="container">
+        <div class="row g-4 mb-5">
+          <div class="col-12 col-lg-4">
+            <h5 class="text-uppercase fw-bold mb-3 text-white">
+              Model Motorcycle
+            </h5>
+            <p class="text-white small pe-lg-4">
+              Premium custom motorcycle modifications, track performance setups,
+              and digital diagnostics tuning for high-end sport bikes and
+              cruisers.
+            </p>
+            <div class="d-flex gap-2 mt-4">
+              <a href="#" class="social-icon"><i class="bi bi-facebook"></i></a>
+              <a href="#" class="social-icon"
+                ><i class="bi bi-instagram"></i
+              ></a>
+              <a href="#" class="social-icon"
+                ><i class="bi bi-twitter-x"></i
+              ></a>
+              <a href="#" class="social-icon"><i class="bi bi-youtube"></i></a>
+            </div>
+          </div>
+
+          <div class="col-6 col-sm-6 col-lg-2">
+            <h6 class="text-uppercase fw-bold text-white mb-3">Navigation</h6>
+            <ul class="list-unstyled d-flex flex-column gap-2 small">
+              <li><a href="index.html" class="footer-link">Home</a></li>
+              <li><a href="Product.html" class="footer-link">Products</a></li>
+              <li><a href="About Us.html" class="footer-link">About Us</a></li>
+              <li><a href="Contact.html" class="footer-link">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="col-6 col-sm-6 col-lg-2">
+            <h6 class="text-uppercase fw-bold text-white mb-3">Services</h6>
+            <ul class="list-unstyled d-flex flex-column gap-2 small">
+              <li><a href="#services" class="footer-link">Custom Tuning</a></li>
+              <li><a href="#services" class="footer-link">Premium Care</a></li>
+              <li><a href="#services" class="footer-link">ECU Scanning</a></li>
+              <li>
+                <a href="#services" class="footer-link">Telemetry Maps</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
