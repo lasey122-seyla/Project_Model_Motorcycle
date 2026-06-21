@@ -28,11 +28,11 @@
         z-index: 1;
       }
       .text-accent {
-        color: #39ff14;
+        color: rgb(0, 255, 0);
       }
       .btn-outline-custom {
-        border: 2px solid #39ff14;
-        color: #ffffff;
+        border: 2px solid rgb(0, 255, 0);
+        color: white;
         background: transparent;
         font-weight: bold;
         text-transform: uppercase;
@@ -42,7 +42,7 @@
       }
       .btn-outline-custom:hover {
         background-color: #39ff14;
-        color: #000000;
+        color: black;
       }
       .bike-card {
         transition: transform 0.3s ease;
@@ -97,6 +97,21 @@
         border-color: rgb(0, 255, 0);
         color: white;
         box-shadow: none;
+      }
+
+      /* New layout helper classes */
+      .bike-img-wrapper {
+        height: 200px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        padding: 1rem;
+        background-color: white;
+      }
+      .bike-img-wrapper img {
+        max-height: 100%;
+        object-fit: contain;
       }
     </style>
   </head>
@@ -157,32 +172,35 @@
         </div>
       </div>
     </nav>
-    <!--row1-->
+
     <div class="container my-5">
       <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
         <div class="col">
-          <div class="card h-100 border rounded-0 bike-card">
-            <div class="p-3 bg-white text-center">
+          <div class="card h-100 border rounded-0 bike-card d-flex flex-column">
+            <div class="bike-img-wrapper">
               <img
                 src="./image/hw2.jpg"
                 class="img-fluid"
                 alt="Kawasaki Ninja H2 Carbon"
               />
             </div>
-            <div class="card-body pt-0 px-4 pb-4">
-              <div
-                class="d-inline-block border border-dark px-3 py-1 small mb-3 text-uppercase"
-                style="font-size: 0.75rem"
-              >
-                Model KAWASAKI
+            <div
+              class="card-body d-flex flex-column justify-content-between pt-0 px-4 pb-4"
+            >
+              <div>
+                <div
+                  class="d-inline-block border border-dark px-3 py-1 small mb-3 text-uppercase"
+                  style="font-size: 0.75rem"
+                >
+                  Model KAWASAKI
+                </div>
+                <p class="fw-bold text-muted small mb-1">Year 2025</p>
+                <p class="fw-bold text-muted small mb-1">Engine: 998CC</p>
+                <p class="fw-bold text-muted small mb-1">Horsepower: 240 HP</p>
+                <p class="fw-bold text-muted small mb-1">Top Speed: 299 km/h</p>
+                <p class="fw-bold text-muted small mb-1">Price: $36,200</p>
               </div>
-              <p class="fw-bold text-muted small mb-1">Year 2025</p>
-              <p class="fw-bold text-muted small mb-1">Engine: 998CC</p>
-              <p class="fw-bold text-muted small mb-1">Horsepower: 240 HP</p>
-              <p class="fw-bold text-muted small mb-1">Top Speed: 299 km/h</p>
-              <p class="fw-bold text-muted small mb-1">Price: $36,200</p>
-
-              <h5 class="card-title h6 fw-bold text-uppercase mb-0">
+              <h5 class="card-title h6 fw-bold text-uppercase mb-0 mt-2">
                 Ninja H2 Carbon
               </h5>
             </div>
@@ -190,27 +208,31 @@
         </div>
 
         <div class="col">
-          <div class="card h-100 border rounded-0 bike-card">
-            <div class="p-3 bg-white text-center">
+          <div class="card h-100 border rounded-0 bike-card d-flex flex-column">
+            <div class="bike-img-wrapper">
               <img
                 src="./image/Du2.jpg"
                 class="img-fluid"
                 alt="DUCATI SUPERLEGGERA V4 with Racing Kit"
               />
             </div>
-            <div class="card-body pt-0 px-4 pb-4">
-              <div
-                class="d-inline-block border border-dark px-3 py-1 small mb-3 text-uppercase"
-                style="font-size: 0.75rem"
-              >
-                Model DUCATI
+            <div
+              class="card-body d-flex flex-column justify-content-between pt-0 px-4 pb-4"
+            >
+              <div>
+                <div
+                  class="d-inline-block border border-dark px-3 py-1 small mb-3 text-uppercase"
+                  style="font-size: 0.75rem"
+                >
+                  Model DUCATI
+                </div>
+                <p class="fw-bold text-muted small mb-1">Year 2025</p>
+                <p class="fw-bold text-muted small mb-1">Engine: 998CC</p>
+                <p class="fw-bold text-muted small mb-1">Horsepower: 234 HP</p>
+                <p class="fw-bold text-muted small mb-1">Top Speed: 322 km/h</p>
+                <p class="fw-bold text-muted small mb-1">Price: $100,000</p>
               </div>
-              <p class="fw-bold text-muted small mb-1">Year 2025</p>
-              <p class="fw-bold text-muted small mb-1">Engine: 998CC</p>
-              <p class="fw-bold text-muted small mb-1">Horsepower: 234 HP</p>
-              <p class="fw-bold text-muted small mb-1">Top Speed: 322 km/h</p>
-              <p class="fw-bold text-muted small mb-1">Price: $100,000</p>
-              <h5 class="card-title h6 fw-bold text-uppercase mb-0">
+              <h5 class="card-title h6 fw-bold text-uppercase mb-0 mt-2">
                 DUCATI SUPERLEGGERA V4 with Racing Kit
               </h5>
             </div>
@@ -218,27 +240,31 @@
         </div>
 
         <div class="col">
-          <div class="card h-100 border rounded-0 bike-card">
-            <div class="p-3 bg-white text-center">
+          <div class="card h-100 border rounded-0 bike-card d-flex flex-column">
+            <div class="bike-img-wrapper">
               <img
                 src="./image/14111_s.jpg"
                 class="img-fluid"
                 alt="KAWASAKI ZZR1400"
               />
             </div>
-            <div class="card-body pt-0 px-4 pb-4">
-              <div
-                class="d-inline-block border border-dark px-3 py-1 small mb-3 text-uppercase"
-                style="font-size: 0.75rem"
-              >
-                Model KAWASAKI
+            <div
+              class="card-body d-flex flex-column justify-content-between pt-0 px-4 pb-4"
+            >
+              <div>
+                <div
+                  class="d-inline-block border border-dark px-3 py-1 small mb-3 text-uppercase"
+                  style="font-size: 0.75rem"
+                >
+                  Model KAWASAKI
+                </div>
+                <p class="fw-bold text-muted small mb-1">Year 2025</p>
+                <p class="fw-bold text-muted small mb-1">Engine: 1,441CC</p>
+                <p class="fw-bold text-muted small mb-1">Horsepower: 200 HP</p>
+                <p class="fw-bold text-muted small mb-1">Top Speed: 299 km/h</p>
+                <p class="fw-bold text-muted small mb-1">Price: $17,599</p>
               </div>
-              <p class="fw-bold text-muted small mb-1">Year 2025</p>
-              <p class="fw-bold text-muted small mb-1">Engine: 1,441CC</p>
-              <p class="fw-bold text-muted small mb-1">Horsepower: 200 HP</p>
-              <p class="fw-bold text-muted small mb-1">Top Speed: 299 km/h</p>
-              <p class="fw-bold text-muted small mb-1">Price: $17,599</p>
-              <h5 class="card-title h6 fw-bold text-uppercase mb-0">
+              <h5 class="card-title h6 fw-bold text-uppercase mb-0 mt-2">
                 KAWASAKI ZZR1400
               </h5>
             </div>
@@ -246,27 +272,31 @@
         </div>
 
         <div class="col">
-          <div class="card h-100 border rounded-0 bike-card">
-            <div class="p-3 bg-white text-center">
+          <div class="card h-100 border rounded-0 bike-card d-flex flex-column">
+            <div class="bike-img-wrapper">
               <img
                 src="./image/suc.jpg"
                 class="img-fluid"
                 alt="Suzuki Hayabusa 1300R"
               />
             </div>
-            <div class="card-body pt-0 px-4 pb-4">
-              <div
-                class="d-inline-block border border-dark px-3 py-1 small mb-3 text-uppercase"
-                style="font-size: 0.75rem"
-              >
-                Model KAWASAKI
+            <div
+              class="card-body d-flex flex-column justify-content-between pt-0 px-4 pb-4"
+            >
+              <div>
+                <div
+                  class="d-inline-block border border-dark px-3 py-1 small mb-3 text-uppercase"
+                  style="font-size: 0.75rem"
+                >
+                  Model KAWASAKI
+                </div>
+                <p class="fw-bold text-muted small mb-1">Year 2025</p>
+                <p class="fw-bold text-muted small mb-1">Engine: 1,340CC</p>
+                <p class="fw-bold text-muted small mb-1">Horsepower: 190 HP</p>
+                <p class="fw-bold text-muted small mb-1">Top Speed: 299 km/h</p>
+                <p class="fw-bold text-muted small mb-1">Price: $19,399</p>
               </div>
-              <p class="fw-bold text-muted small mb-1">Year 2025</p>
-              <p class="fw-bold text-muted small mb-1">Engine: 1,340CC</p>
-              <p class="fw-bold text-muted small mb-1">Horsepower: 190 HP</p>
-              <p class="fw-bold text-muted small mb-1">Top Speed: 299 km/h</p>
-              <p class="fw-bold text-muted small mb-1">Price: $19,399</p>
-              <h5 class="card-title h6 fw-bold text-uppercase mb-0">
+              <h5 class="card-title h6 fw-bold text-uppercase mb-0 mt-2">
                 Suzuki Hayabusa 1300R
               </h5>
             </div>
@@ -274,34 +304,37 @@
         </div>
       </div>
     </div>
-    <!--row2-->
+
     <div class="container my-5">
       <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
         <div class="col">
-          <div class="card h-100 border rounded-0 bg-white bike-card">
-            <div
-              class="p-3 text-center d-flex align-items-center justify-content-center"
-              style="height: 220px"
-            >
+          <div
+            class="card h-100 border rounded-0 bg-white bike-card d-flex flex-column"
+          >
+            <div class="bike-img-wrapper">
               <img
                 src="./image/yam.jpg"
                 class="img-fluid"
                 alt="Yamaha yzf r1m"
               />
             </div>
-            <div class="card-body px-4 pb-4 pt-0">
-              <div
-                class="d-inline-block border border-dark px-3 py-1 small mb-3 text-uppercase"
-                style="font-size: 0.75rem"
-              >
-                Model YAMAHA
+            <div
+              class="card-body d-flex flex-column justify-content-between px-4 pb-4 pt-0"
+            >
+              <div>
+                <div
+                  class="d-inline-block border border-dark px-3 py-1 small mb-3 text-uppercase"
+                  style="font-size: 0.75rem"
+                >
+                  Model YAMAHA
+                </div>
+                <p class="fw-bold text-muted small mb-1">Year 2025</p>
+                <p class="fw-bold text-muted small mb-1">Engine: 998CC</p>
+                <p class="fw-bold text-muted small mb-1">Horsepower: 200 HP</p>
+                <p class="fw-bold text-muted small mb-1">Top Speed: 299 km/h</p>
+                <p class="fw-bold text-muted small mb-1">Price: $27,699</p>
               </div>
-              <p class="fw-bold text-muted small mb-1">Year 2025</p>
-              <p class="fw-bold text-muted small mb-1">Engine: 998CC</p>
-              <p class="fw-bold text-muted small mb-1">Horsepower: 200 HP</p>
-              <p class="fw-bold text-muted small mb-1">Top Speed: 299 km/h</p>
-              <p class="fw-bold text-muted small mb-1">Price: $27,699</p>
-              <h3 class="card-title h6 fw-bold text-uppercase mb-0">
+              <h3 class="card-title h6 fw-bold text-uppercase mb-0 mt-2">
                 YAMAHA YZF R1M
               </h3>
             </div>
@@ -309,28 +342,31 @@
         </div>
 
         <div class="col">
-          <div class="card h-100 border rounded-0 bg-white bike-card">
-            <div
-              class="p-3 text-center d-flex align-items-center justify-content-center"
-              style="height: 220px"
-            >
+          <div
+            class="card h-100 border rounded-0 bg-white bike-card d-flex flex-column"
+          >
+            <div class="bike-img-wrapper">
               <img src="./image/Z1000 R.jpg" class="img-fluid" alt="Z1000 R" />
             </div>
-            <div class="card-body px-4 pb-4 pt-0">
-              <div
-                class="d-inline-block border border-dark px-3 py-1 small mb-3 text-uppercase"
-                style="font-size: 0.75rem"
-              >
-                Model KAWASAKI
+            <div
+              class="card-body d-flex flex-column justify-content-between px-4 pb-4 pt-0"
+            >
+              <div>
+                <div
+                  class="d-inline-block border border-dark px-3 py-1 small mb-3 text-uppercase"
+                  style="font-size: 0.75rem"
+                >
+                  Model KAWASAKI
+                </div>
+                <p class="fw-bold text-muted small mb-1">Year 2025</p>
+                <p class="fw-bold text-muted small mb-1">Engine: 1043CC</p>
+                <p class="fw-bold text-muted small mb-1">Horsepower: 142 HP</p>
+                <p class="fw-bold text-muted small mb-1">
+                  Top Speed: 241-249km/h
+                </p>
+                <p class="fw-bold text-muted small mb-1">Price: $14,000</p>
               </div>
-              <p class="fw-bold text-muted small mb-1">Year 2025</p>
-              <p class="fw-bold text-muted small mb-1">Engine: 1043CC</p>
-              <p class="fw-bold text-muted small mb-1">Horsepower: 142 HP</p>
-              <p class="fw-bold text-muted small mb-1">
-                Top Speed: 241-249km/h
-              </p>
-              <p class="fw-bold text-muted small mb-1">Price: $14,000</p>
-              <h3 class="card-title h6 fw-bold text-uppercase mb-0">
+              <h3 class="card-title h6 fw-bold text-uppercase mb-0 mt-2">
                 KAWASAKI Z1000
               </h3>
             </div>
@@ -338,30 +374,33 @@
         </div>
 
         <div class="col">
-          <div class="card h-100 border rounded-0 bg-white bike-card">
-            <div
-              class="p-3 text-center d-flex align-items-center justify-content-center"
-              style="height: 220px"
-            >
+          <div
+            class="card h-100 border rounded-0 bg-white bike-card d-flex flex-column"
+          >
+            <div class="bike-img-wrapper">
               <img
                 src="./image/2026-kawasaki-ninja-zx-6r.webp"
                 class="img-fluid"
                 alt="Kawasaki ZX-6R"
               />
             </div>
-            <div class="card-body px-4 pb-4 pt-0">
-              <div
-                class="d-inline-block border border-dark px-3 py-1 small mb-3 text-uppercase"
-                style="font-size: 0.75rem"
-              >
-                Model KAWASAKI
+            <div
+              class="card-body d-flex flex-column justify-content-between px-4 pb-4 pt-0"
+            >
+              <div>
+                <div
+                  class="d-inline-block border border-dark px-3 py-1 small mb-3 text-uppercase"
+                  style="font-size: 0.75rem"
+                >
+                  Model KAWASAKI
+                </div>
+                <p class="fw-bold text-muted small mb-1">Year 2025</p>
+                <p class="fw-bold text-muted small mb-1">Engine: 636CC</p>
+                <p class="fw-bold text-muted small mb-1">Horsepower: 122 HP</p>
+                <p class="fw-bold text-muted small mb-1">Top Speed: 257 km/h</p>
+                <p class="fw-bold text-muted small mb-1">Price: $11,399</p>
               </div>
-              <p class="fw-bold text-muted small mb-1">Year 2025</p>
-              <p class="fw-bold text-muted small mb-1">Engine: 636CC</p>
-              <p class="fw-bold text-muted small mb-1">Horsepower: 122 HP</p>
-              <p class="fw-bold text-muted small mb-1">Top Speed: 257 km/h</p>
-              <p class="fw-bold text-muted small mb-1">Price: $11,399</p>
-              <h3 class="card-title h6 fw-bold text-uppercase mb-0">
+              <h3 class="card-title h6 fw-bold text-uppercase mb-0 mt-2">
                 KAWASAKI ZX6R
               </h3>
             </div>
@@ -369,30 +408,33 @@
         </div>
 
         <div class="col">
-          <div class="card h-100 border rounded-0 bg-white bike-card">
-            <div
-              class="p-3 text-center d-flex align-items-center justify-content-center"
-              style="height: 220px"
-            >
+          <div
+            class="card h-100 border rounded-0 bg-white bike-card d-flex flex-column"
+          >
+            <div class="bike-img-wrapper">
               <img
                 src="./image/ZX-10R-2026-.png"
                 class="img-fluid"
                 alt="Kawasaki ZX-10R 2026"
               />
             </div>
-            <div class="card-body px-4 pb-4 pt-0">
-              <div
-                class="d-inline-block border border-dark px-3 py-1 small mb-3 text-uppercase"
-                style="font-size: 0.75rem"
-              >
-                Model KAWASAKI
+            <div
+              class="card-body d-flex flex-column justify-content-between px-4 pb-4 pt-0"
+            >
+              <div>
+                <div
+                  class="d-inline-block border border-dark px-3 py-1 small mb-3 text-uppercase"
+                  style="font-size: 0.75rem"
+                >
+                  Model KAWASAKI
+                </div>
+                <p class="fw-bold text-muted small mb-1">Year 2025</p>
+                <p class="fw-bold text-muted small mb-1">Engine: 998CC</p>
+                <p class="fw-bold text-muted small mb-1">Horsepower: 200 HP</p>
+                <p class="fw-bold text-muted small mb-1">Top Speed: 299 km/h</p>
+                <p class="fw-bold text-muted small mb-1">Price: $17,999</p>
               </div>
-              <p class="fw-bold text-muted small mb-1">Year 2025</p>
-              <p class="fw-bold text-muted small mb-1">Engine: 998CC</p>
-              <p class="fw-bold text-muted small mb-1">Horsepower: 200 HP</p>
-              <p class="fw-bold text-muted small mb-1">Top Speed: 299 km/h</p>
-              <p class="fw-bold text-muted small mb-1">Price: $17,999</p>
-              <h3 class="card-title h6 fw-bold text-uppercase mb-0">
+              <h3 class="card-title h6 fw-bold text-uppercase mb-0 mt-2">
                 KAWASAKI ZX-10R
               </h3>
             </div>
@@ -400,34 +442,37 @@
         </div>
       </div>
     </div>
-    <!--row3-->
+
     <div class="container my-5">
       <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
         <div class="col">
-          <div class="card h-100 border rounded-0 bg-white bike-card">
-            <div
-              class="p-3 text-center d-flex align-items-center justify-content-center"
-              style="height: 220px"
-            >
+          <div
+            class="card h-100 border rounded-0 bg-white bike-card d-flex flex-column"
+          >
+            <div class="bike-img-wrapper">
               <img
                 src="./image/BMW1000rr.avif"
                 class="img-fluid"
                 alt="BMW S100RR"
               />
             </div>
-            <div class="card-body pt-0 px-4 pb-4">
-              <div
-                class="d-inline-block border border-dark px-3 py-1 small mb-3 text-uppercase"
-                style="font-size: 0.75rem"
-              >
-                Model BMW
+            <div
+              class="card-body d-flex flex-column justify-content-between pt-0 px-4 pb-4"
+            >
+              <div>
+                <div
+                  class="d-inline-block border border-dark px-3 py-1 small mb-3 text-uppercase"
+                  style="font-size: 0.75rem"
+                >
+                  Model BMW
+                </div>
+                <p class="fw-bold text-muted small mb-1">Year 2025</p>
+                <p class="fw-bold text-muted small mb-1">Engine: 999CC</p>
+                <p class="fw-bold text-muted small mb-1">Horsepower: 205 HP</p>
+                <p class="fw-bold text-muted small mb-1">Top Speed: 303 km/h</p>
+                <p class="fw-bold text-muted small mb-1">Price: $19,895</p>
               </div>
-              <p class="fw-bold text-muted small mb-1">Year 2025</p>
-              <p class="fw-bold text-muted small mb-1">Engine: 999CC</p>
-              <p class="fw-bold text-muted small mb-1">Horsepower: 205 HP</p>
-              <p class="fw-bold text-muted small mb-1">Top Speed: 303 km/h</p>
-              <p class="fw-bold text-muted small mb-1">Price: $19,895</p>
-              <h5 class="card-title h6 fw-bold text-uppercase mb-0">
+              <h5 class="card-title h6 fw-bold text-uppercase mb-0 mt-2">
                 BMW S1000RR
               </h5>
             </div>
@@ -435,30 +480,33 @@
         </div>
 
         <div class="col">
-          <div class="card h-100 border rounded-0 bg-white bike-card">
-            <div
-              class="p-3 text-center d-flex align-items-center justify-content-center"
-              style="height: 220px"
-            >
+          <div
+            class="card h-100 border rounded-0 bg-white bike-card d-flex flex-column"
+          >
+            <div class="bike-img-wrapper">
               <img
                 src="./image/yamaha YZF-R6 600 2010.jpg"
                 class="img-fluid"
-                alt="DUCATI SUPERLEGGERA V4 with Racing Kit"
+                alt="YAMAHA YZF-R6"
               />
             </div>
-            <div class="card-body pt-0 px-4 pb-4">
-              <div
-                class="d-inline-block border border-dark px-3 py-1 small mb-3 text-uppercase"
-                style="font-size: 0.75rem"
-              >
-                Model YAMAHA
+            <div
+              class="card-body d-flex flex-column justify-content-between pt-0 px-4 pb-4"
+            >
+              <div>
+                <div
+                  class="d-inline-block border border-dark px-3 py-1 small mb-3 text-uppercase"
+                  style="font-size: 0.75rem"
+                >
+                  Model YAMAHA
+                </div>
+                <p class="fw-bold text-muted small mb-1">Year 2025</p>
+                <p class="fw-bold text-muted small mb-1">Engine: 599CC</p>
+                <p class="fw-bold text-muted small mb-1">Horsepower: 118 HP</p>
+                <p class="fw-bold text-muted small mb-1">Top Speed: 257 km/h</p>
+                <p class="fw-bold text-muted small mb-1">Price: 13,000</p>
               </div>
-              <p class="fw-bold text-muted small mb-1">Year 2025</p>
-              <p class="fw-bold text-muted small mb-1">Engine: 599CC</p>
-              <p class="fw-bold text-muted small mb-1">Horsepower: 118 HP</p>
-              <p class="fw-bold text-muted small mb-1">Top Speed: 257 km/h</p>
-              <p class="fw-bold text-muted small mb-1">Price: 13,000</p>
-              <h5 class="card-title h6 fw-bold text-uppercase mb-0">
+              <h5 class="card-title h6 fw-bold text-uppercase mb-0 mt-2">
                 YAMAHA YZF-R6
               </h5>
             </div>
@@ -466,30 +514,33 @@
         </div>
 
         <div class="col">
-          <div class="card h-100 border rounded-0 bg-white bike-card">
-            <div
-              class="p-3 text-center d-flex align-items-center justify-content-center"
-              style="height: 220px"
-            >
+          <div
+            class="card h-100 border rounded-0 bg-white bike-card d-flex flex-column"
+          >
+            <div class="bike-img-wrapper">
               <img
                 src="./image/h2R.jpg"
                 class="img-fluid"
-                alt="Honda CBR1000RR-R Fireblade SP"
+                alt="Kawaski ninja H2R"
               />
             </div>
-            <div class="card-body pt-0 px-4 pb-4">
-              <div
-                class="d-inline-block border border-dark px-3 py-1 small mb-3 text-uppercase"
-                style="font-size: 0.75rem"
-              >
-                Model KAWASAKI
+            <div
+              class="card-body d-flex flex-column justify-content-between pt-0 px-4 pb-4"
+            >
+              <div>
+                <div
+                  class="d-inline-block border border-dark px-3 py-1 small mb-3 text-uppercase"
+                  style="font-size: 0.75rem"
+                >
+                  Model KAWASAKI
+                </div>
+                <p class="fw-bold text-muted small mb-1">Year 2025</p>
+                <p class="fw-bold text-muted small mb-1">Engine: 998CC</p>
+                <p class="fw-bold text-muted small mb-1">Horsepower: 310 HP</p>
+                <p class="fw-bold text-muted small mb-1">Top Speed: 400 km/h</p>
+                <p class="fw-bold text-muted small mb-1">Price: $59,100</p>
               </div>
-              <p class="fw-bold text-muted small mb-1">Year 2025</p>
-              <p class="fw-bold text-muted small mb-1">Engine: 998CC</p>
-              <p class="fw-bold text-muted small mb-1">Horsepower: 310 HP</p>
-              <p class="fw-bold text-muted small mb-1">Top Speed: 400 km/h</p>
-              <p class="fw-bold text-muted small mb-1">Price: $59,100</p>
-              <h5 class="card-title h6 fw-bold text-uppercase mb-0">
+              <h5 class="card-title h6 fw-bold text-uppercase mb-0 mt-2">
                 Kawaski ninja H2R
               </h5>
             </div>
@@ -497,143 +548,167 @@
         </div>
 
         <div class="col">
-          <div class="card h-100 border rounded-0 bg-white bike-card">
-            <div
-              class="p-3 text-center d-flex align-items-center justify-content-center"
-              style="height: 220px"
-            >
+          <div
+            class="card h-100 border rounded-0 bg-white bike-card d-flex flex-column"
+          >
+            <div class="bike-img-wrapper">
               <img
                 src="./image/M-1000-R-Blackstorm.jpg"
                 class="img-fluid"
-                alt="SUZUKI HAYABUSA 1300R"
+                alt="M1000R"
               />
             </div>
-            <div class="card-body pt-0 px-4 pb-4">
-              <div
-                class="d-inline-block border border-dark px-3 py-1 small mb-3 text-uppercase"
-                style="font-size: 0.75rem"
-              >
-                Model BMW
+            <div
+              class="card-body d-flex flex-column justify-content-between pt-0 px-4 pb-4"
+            >
+              <div>
+                <div
+                  class="d-inline-block border border-dark px-3 py-1 small mb-3 text-uppercase"
+                  style="font-size: 0.75rem"
+                >
+                  Model BMW
+                </div>
+                <p class="fw-bold text-muted small mb-1">Year 2025</p>
+                <p class="fw-bold text-muted small mb-1">Engine: 999CC</p>
+                <p class="fw-bold text-muted small mb-1">Horsepower: 205 HP</p>
+                <p class="fw-bold text-muted small mb-1">Top Speed: 280 km/h</p>
+                <p class="fw-bold text-muted small mb-1">Price: $22,695</p>
               </div>
-              <p class="fw-bold text-muted small mb-1">Year 2025</p>
-              <p class="fw-bold text-muted small mb-1">Engine: 999CC</p>
-              <p class="fw-bold text-muted small mb-1">Horsepower: 205 HP</p>
-              <p class="fw-bold text-muted small mb-1">Top Speed: 280 km/h</p>
-              <p class="fw-bold text-muted small mb-1">Price: $22,695</p>
-              <h5 class="card-title h6 fw-bold text-uppercase mb-0">M1000R</h5>
+              <h5 class="card-title h6 fw-bold text-uppercase mb-0 mt-2">
+                M1000R
+              </h5>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <!--row4-->
+
     <div class="container my-5">
       <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
         <div class="col">
-          <div class="card h-100 border rounded-0 bike-card">
-            <div class="p-3 bg-white text-center">
+          <div class="card h-100 border rounded-0 bike-card d-flex flex-column">
+            <div class="bike-img-wrapper">
               <img
-                src="./image/DUCATI DESMOSEDICI.jpg "
+                src="./image/DUCATI DESMOSEDICI.jpg"
                 class="img-fluid"
-                alt="HONDA CRF1000L AFRICA TWIN"
+                alt="DUCATI DESMOSEDICI"
               />
             </div>
-            <div class="card-body pt-0 px-4 pb-4">
-              <div
-                class="d-inline-block border border-dark px-3 py-1 small mb-3 text-uppercase"
-                style="font-size: 0.75rem"
-              >
-                Model DUCATI
+            <div
+              class="card-body d-flex flex-column justify-content-between pt-0 px-4 pb-4"
+            >
+              <div>
+                <div
+                  class="d-inline-block border border-dark px-3 py-1 small mb-3 text-uppercase"
+                  style="font-size: 0.75rem"
+                >
+                  Model DUCATI
+                </div>
+                <p class="fw-bold text-muted small mb-1">Year 2025</p>
+                <p class="fw-bold text-muted small mb-1">Engin: 1000C</p>
+                <p class="fw-bold text-muted small mb-1">Horsepower: 250 HP</p>
+                <p class="fw-bold text-muted small mb-1">Top speed: 363 km/h</p>
+                <p class="fw-bold text-muted small mb-1">
+                  Price:$2.5 to $3 million per season
+                </p>
               </div>
-              <p class="fw-bold text-muted small mb-1">Year 2025</p>
-              <p class="fw-bold text-muted small mb-1">Engin: 1000C</p>
-              <p class="fw-bold text-muted small mb-1">Horsepower: 250 HP</p>
-              <p class="fw-bold text-muted small mb-1">Top speed: 363 km/h</p>
-              <p class="fw-bold text-muted small mb-1">
-                Price:$2.5 to $3 million per season(Not for Sale)
-              </p>
-              <h3 class="card-title h6 fw-bold text-uppercase mb-0">
+              <h3 class="card-title h6 fw-bold text-uppercase mb-0 mt-2">
                 DUCATI DESMOSEDICI
               </h3>
             </div>
           </div>
         </div>
+
         <div class="col">
-          <div class="card h-100 border rounded-0 bike-card">
-            <div class="p-3 bg-white text-center">
+          <div class="card h-100 border rounded-0 bike-card d-flex flex-column">
+            <div class="bike-img-wrapper">
               <img
                 src="./image/kawasaki ninja zx-rr.jpg"
                 class="img-fluid"
                 alt="KAWASAKI NINJA ZX-RR"
               />
             </div>
-            <div class="card-body pt-0 px-4 pb-4">
-              <div
-                class="d-inline-block border border-dark px-3 py-1 small mb-3 text-uppercase"
-                style="font-size: 0.75rem"
-              >
-                Model KAWASAKI
+            <div
+              class="card-body d-flex flex-column justify-content-between pt-0 px-4 pb-4"
+            >
+              <div>
+                <div
+                  class="d-inline-block border border-dark px-3 py-1 small mb-3 text-uppercase"
+                  style="font-size: 0.75rem"
+                >
+                  Model KAWASAKI
+                </div>
+                <p class="fw-bold text-muted small mb-1">Year 2025</p>
+                <p class="fw-bold text-muted small mb-1">Engin: 998CC</p>
+                <p class="fw-bold text-muted small mb-1">Horsepower: 201 HP</p>
+                <p class="fw-bold text-muted small mb-1">Top speed:300 km/h</p>
+                <p class="fw-bold text-muted small mb-1">Price:230,499$</p>
               </div>
-              <p class="fw-bold text-muted small mb-1">Year 2025</p>
-              <p class="fw-bold text-muted small mb-1">Engin: 998CC</p>
-              <p class="fw-bold text-muted small mb-1">Horsepower: 201 HP</p>
-              <p class="fw-bold text-muted small mb-1">Top speed:300 km/h</p>
-              <p class="fw-bold text-muted small mb-1">Price:230,499$</p>
-              <h3 class="card-title h6 fw-bold text-uppercase mb-0">
+              <h3 class="card-title h6 fw-bold text-uppercase mb-0 mt-2">
                 KAWASAKI NINJA ZX-RR
               </h3>
             </div>
           </div>
         </div>
+
         <div class="col">
-          <div class="card h-100 border rounded-0 bike-card">
-            <div class="p-3 bg-white text-center">
+          <div class="card h-100 border rounded-0 bike-card d-flex flex-column">
+            <div class="bike-img-wrapper">
               <img
                 src="./image/ducati 1199 panigale s.jpg"
                 class="img-fluid"
-                alt="REPSOL HONDA RC213V '14"
+                alt="DUCATI PANIGALEV4 TRICOLORE"
               />
             </div>
-            <div class="card-body pt-0 px-4 pb-4">
-              <div
-                class="d-inline-block border border-dark px-3 py-1 small mb-3 text-uppercase"
-                style="font-size: 0.75rem"
-              >
-                Model DUCATI
+            <div
+              class="card-body d-flex flex-column justify-content-between pt-0 px-4 pb-4"
+            >
+              <div>
+                <div
+                  class="d-inline-block border border-dark px-3 py-1 small mb-3 text-uppercase"
+                  style="font-size: 0.75rem"
+                >
+                  Model DUCATI
+                </div>
+                <p class="fw-bold text-muted small mb-1">Year 2025</p>
+                <p class="fw-bold text-muted small mb-1">Engin: 1,103CC</p>
+                <p class="fw-bold text-muted small mb-1">Horsepower: 209 HP</p>
+                <p class="fw-bold text-muted small mb-1">Top speed:300 km/h</p>
+                <p class="fw-bold text-muted small mb-1">Price:58,000</p>
               </div>
-              <p class="fw-bold text-muted small mb-1">Year 2025</p>
-              <p class="fw-bold text-muted small mb-1">Engin: 1,103CC</p>
-              <p class="fw-bold text-muted small mb-1">Horsepower: 209 HP</p>
-              <p class="fw-bold text-muted small mb-1">Top speed:300 km/h</p>
-              <p class="fw-bold text-muted small mb-1">Price:58,000</p>
-              <h3 class="card-title h6 fw-bold text-uppercase mb-0">
+              <h3 class="card-title h6 fw-bold text-uppercase mb-0 mt-2">
                 DUCATI PANIGALEV4 TRICOLORE
               </h3>
             </div>
           </div>
         </div>
+
         <div class="col">
-          <div class="card h-100 border rounded-0 bike-card">
-            <div class="p-3 bg-white text-center">
+          <div class="card h-100 border rounded-0 bike-card d-flex flex-column">
+            <div class="bike-img-wrapper">
               <img
                 src="./image/dca.jpg"
                 class="img-fluid"
-                alt="DUCATI 1199 PANIGALE S"
+                alt="DUCATI PANIGALEV4 TRICOLORE"
               />
             </div>
-            <div class="card-body pt-0 px-4 pb-4">
-              <div
-                class="d-inline-block border border-dark px-3 py-1 small mb-3 text-uppercase"
-                style="font-size: 0.75rem"
-              >
-                Model DUCATI
+            <div
+              class="card-body d-flex flex-column justify-content-between pt-0 px-4 pb-4"
+            >
+              <div>
+                <div
+                  class="d-inline-block border border-dark px-3 py-1 small mb-3 text-uppercase"
+                  style="font-size: 0.75rem"
+                >
+                  Model DUCATI
+                </div>
+                <p class="fw-bold text-muted small mb-1">Year 2025</p>
+                <p class="fw-bold text-muted small mb-1">Engin: 1,103CC</p>
+                <p class="fw-bold text-muted small mb-1">Horsepower: 209 HP</p>
+                <p class="fw-bold text-muted small mb-1">Top speed:300 km/h</p>
+                <p class="fw-bold text-muted small mb-1">Price:58,000</p>
               </div>
-              <p class="fw-bold text-muted small mb-1">Year 2025</p>
-              <p class="fw-bold text-muted small mb-1">Engin: 1,103CC</p>
-              <p class="fw-bold text-muted small mb-1">Horsepower: 209 HP</p>
-              <p class="fw-bold text-muted small mb-1">Top speed:300 km/h</p>
-              <p class="fw-bold text-muted small mb-1">Price:58,000</p>
-              <h3 class="card-title h6 fw-bold text-uppercase mb-0">
+              <h3 class="card-title h6 fw-bold text-uppercase mb-0 mt-2">
                 DUCATI PANIGALEV4 TRICOLORE
               </h3>
             </div>
@@ -641,7 +716,7 @@
         </div>
       </div>
     </div>
-    <!--footer-->
+
     <footer class="custom-footer pt-5 pb-4 text-light">
       <div class="container">
         <div class="row g-4 mb-5">
